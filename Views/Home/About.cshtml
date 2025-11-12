@@ -1,9 +1,17 @@
+@* Complete About.cshtml *@
 @{
-    ViewData["Title"] = "About Me";
+    ViewData["Title"] = "About";
 }
 
-<h2>About Me</h2>
-<p>
-    I am a software engineering student and passionate about building web applications, exploring machine learning and AI, and creating professional software solutions. 
-    I enjoy solving real-world problems through code and learning new technologies.
-</p>
+<div class="container mt-5">
+    <h2>About Me</h2>
+    <div class="row mt-3">
+        <div class="col-md-4 text-center">
+            <img src="~/images/profile.jpg" class="rounded-circle img-fluid" />
+        </div>
+        <div class="col-md-8">
+            <p>I am a software engineer specializing in .NET development, web applications, and machine learning. I enjoy building projects that are both practical and elegant. My goal is to create professional solutions with clean UI and responsive design.</p>
+            <a href="/Home/Projects" class="btn btn-primary btn-custom mt-2">My Projects</a>
+        </div>
+    </div>
+</div>

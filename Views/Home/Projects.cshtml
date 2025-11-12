@@ -1,34 +1,30 @@
+@* Complete Projects.cshtml *@
 @{
     ViewData["Title"] = "Projects";
 }
 
-<h2>My Projects</h2>
+<div class="container mt-5">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/todolist.jpg" class="card-img-top showcase-img" />
+                <div class="card-body">
+                    <h5 class="card-title">To-Do List App</h5>
+                    <p class="card-text">ASP.NET Core MVC app with EF Core, allows task management with timestamps.</p>
+                    <a href="#" class="btn btn-primary btn-custom">View Project</a>
+                </div>
+            </div>
+        </div>
 
-<div class="row">
-    <div class="col-md-4 mb-3">
-        <div class="card shadow-sm">
-            <img src="~/images/project1.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-                <h5 class="card-title">To-Do List App</h5>
-                <p class="card-text">A professional To-Do List application built using ASP.NET Core MVC and EF Core.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-3">
-        <div class="card shadow-sm">
-            <img src="~/images/project2.jpg" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-                <h5 class="card-title">Voice Recognition System</h5>
-                <p class="card-text">ML project to detect number of speakers, gender, and background music in audio recordings.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-3">
-        <div class="card shadow-sm">
-            <img src="~/images/project3.jpg" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-                <h5 class="card-title">Portfolio Website</h5>
-                <p class="card-text">My personal portfolio built using .NET MVC and Bootstrap 5.</p>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/portfolio.jpg" class="card-img-top showcase-img" />
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">Professional personal portfolio with projects, certificates, and experiences.</p>
+                    <a href="#" class="btn btn-primary btn-custom">View Project</a>
+                </div>
             </div>
         </div>
     </div>

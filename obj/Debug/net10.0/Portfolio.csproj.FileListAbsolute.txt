@@ -95,3 +95,4 @@ D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\refint\Portfolio.dll
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.pdb
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.genruntimeconfig.cache
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\ref\Portfolio.dll
+D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.sourcelink.json
