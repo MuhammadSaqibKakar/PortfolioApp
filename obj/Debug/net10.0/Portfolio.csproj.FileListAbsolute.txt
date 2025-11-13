@@ -21,7 +21,6 @@ D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\scopedcss\bundle\Portfolio.styles.css
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\scopedcss\projectbundle\Portfolio.bundle.scp.css
-D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\compressed\8mfu681els-{0}-b9sayid5wm-b9sayid5wm.gz
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\compressed\7u0i9x6hv8-{0}-61n19gt1b8-61n19gt1b8.gz
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\compressed\1y9vpx44du-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\compressed\fkmehnfzni-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -96,3 +95,4 @@ D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.pdb
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.genruntimeconfig.cache
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\ref\Portfolio.dll
 D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\Portfolio.sourcelink.json
+D:\Vscode\DotNet_Projects\Portfolio\obj\Debug\net10.0\compressed\8mfu681els-{0}-21mi944or5-21mi944or5.gz

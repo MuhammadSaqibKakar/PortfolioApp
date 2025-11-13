@@ -1,22 +1,129 @@
-@* Complete Certificates.cshtml *@
 @{
     ViewData["Title"] = "Certificates";
 }
 
-<div class="container mt-5">
-    <h2 class="mb-4">Certificates</h2>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card p-3 text-center">
-                <img src="~/images/certificate1.jpg" class="img-fluid mb-2" />
-                <h6>Microsoft Azure Fundamentals</h6>
+<section class="py-5" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+    <div class="container">
+        <!-- Improved heading -->
+        <h2 class="mb-5 text-center text-white fw-bold display-4" style="text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+            My Certificates
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Certificate 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/aws.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">AWS Cloud Practitioner</h6>
+                    <a href="@Url.Content("~/images/aws.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3 text-center">
-                <img src="~/images/certificate2.jpg" class="img-fluid mb-2" />
-                <h6>Machine Learning with Python</h6>
+
+            <!-- Certificate 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/linux essentials.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Linux Essentials</h6>
+                    <a href="@Url.Content("~/images/linux essentials.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
             </div>
+
+            <!-- Certificate 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/linux unhatched.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Linux Unhatched</h6>
+                    <a href="@Url.Content("~/images/linux unhatched.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/git.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Git/GitHub</h6>
+                    <a href="@Url.Content("~/images/git.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/python 1.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Python Essentials 1</h6>
+                    <a href="@Url.Content("~/images/python 1.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/python 2.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Python Essentials 2</h6>
+                    <a href="@Url.Content("~/images/python 2.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-lg rounded-4 text-center p-3 h-100">
+                    <img src="~/images/python.jpg" class="img-fluid rounded-top-4 mb-3" />
+                    <h6 class="fw-bold text-dark">Introduction to Python</h6>
+                    <a href="@Url.Content("~/images/python.jpg")" target="_blank" class="btn btn-custom-gradient mt-3 w-100">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
+
+<style>
+    /* Button Gradient */
+    .btn-custom-gradient {
+        background: linear-gradient(135deg, #4a368d 0%, #3308f4 100%);
+        border: none;
+        border-radius: 50px;
+        color: #f8f8f8;
+        font-weight: 600;
+        padding: 12px 0;
+        transition: all 0.3s ease-in-out;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-custom-gradient:hover {
+        background: linear-gradient(135deg, #ffffff 0%, #1293ca 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 154, 158, 0.4);
+        color: #000 !important;
+    }
+
+    /* Card Hover Effect */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    h6 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+</style>

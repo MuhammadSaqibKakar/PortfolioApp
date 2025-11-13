@@ -1,58 +1,139 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>@ViewData["Title"] - Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="~/css/site.css" />
-<style>
-body { background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif; }
-.navbar { background-color: #343a40 !important; }
-.navbar-brand, .nav-link { color: #f8f9fa !important; }
-.nav-link:hover { color: #0d6efd !important; }
-.hero { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 100px 0; text-align: center; }
-.hero h1 { font-size: 3rem; font-weight: 700; }
-.hero p { font-size: 1.3rem; }
-.card { transition: transform 0.3s; }
-.card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-.btn-custom { border-radius: 50px; padding: 10px 25px; }
-.footer { background-color: #343a40; color: white; padding: 20px 0; text-align: center; }
-.badge-custom { background-color: #0d6efd; }
-img.showcase-img { border-radius: 15px; transition: transform 0.3s; }
-img.showcase-img:hover { transform: scale(1.05); }
-</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Saqib</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margins and paddings */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        .custom-navbar {
+            background: linear-gradient(135deg, #4a368d 0%, #3308f4 100%);
+            padding: 0.5rem 1rem;
+        }
+
+        .custom-navbar .saqib-text {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        .custom-navbar .saqib-crown {
+            font-size: 2rem;
+            vertical-align: middle;
+        }
+
+        .custom-navbar .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin-left: 1rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .custom-navbar .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+
+        /* Footer */
+        .custom-footer {
+            background: linear-gradient(135deg, #4a368d 0%, #3308f4 100%);
+            margin: 0;
+            padding: 0.8rem 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0; /* reduce from 120px */
+            @* border-bottom-left-radius: 50px;  *@
+            @* border-bottom-right-radius: 50px; *@
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            margin-top: 0;
+        }
+        
+        .hero .col-md-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        /* Buttons */
+        .btn-custom-gradient {
+            background: linear-gradient(135deg, #ffcc00 0%, #ffd633 100%);
+            color: #000;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 0.7rem 2rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-custom-gradient:hover {
+            background: linear-gradient(135deg, #ffe680 0%, #ffcc33 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: #000;
+        }
+
+        /* Badges */
+        .badge-custom {
+            background: #fff;
+            color: #000;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.4rem 1rem;
+            margin: 0.2rem;
+            border-radius: 50px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        /* Reduce main body bottom margin */
+        main {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-<div class="container">
-<a class="navbar-brand" href="/">Portfolio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="/Home/About">About</a></li>
-<li class="nav-item"><a class="nav-link" href="/Home/Projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="/Home/Certificates">Certificates</a></li>
-<li class="nav-item"><a class="nav-link" href="/Home/Experiences">Experiences</a></li>
-</ul>
-</div>
-</div>
-</nav>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center saqib-logo" href="/">
+                <span class="saqib-text">Saqib</span>
+              <i class="fas fa-crown text-warning ms-2"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="container mt-4">
-@RenderBody()
-</div>
+    <!-- Page Body -->
+    <main role="main" class="flex-shrink-0">
+        @RenderBody()
+    </main>
 
+    <!-- Footer -->
+    <footer class="custom-footer text-center text-white">
+        <p class="mb-0">© @DateTime.Now.Year Saqib | All Rights Reserved</p>
+    </footer>
 
-<footer class="footer mt-5">
-<p>© 2025 Saqib. All Rights Reserved.</p>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

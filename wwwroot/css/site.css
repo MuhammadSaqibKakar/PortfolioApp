@@ -1,31 +1,141 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* ===== Base Styles ===== */
 body {
-  margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-gradient);
+    margin: 0;
+    padding: 0;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* ===== Global Theme Colors ===== */
+:root {
+    --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+/* Navbar styling */
+.custom-navbar {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 0 0 50px 50px;
+    padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white !important;    /* force white text */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-navbar .nav-link {
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffd700 !important;  /* subtle hover effect */
+}
+
+/* Ensure toggler icon is visible on gradient background */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+/* Navbar brand */
+.saqib-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;   /* Make Saqib larger */
+    color: white !important;
+    display: flex;
+    align-items: flex-start;  /* Align crown with top of text */
+}
+
+.saqib-text {
+    line-height: 1;
+}
+
+.saqib-crown {
+    font-size: 1.8rem;      /* Bigger crown */
+    margin-left: 5px;        /* space between text and crown */
+    margin-top: -4px;        /* lift crown to align with top of text */
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Hero button gradient */
+.btn-custom-gradient {
+    background: linear-gradient(135deg, #ffcc00 0%, #ffd633 100%);
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.5rem 1.8rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom-gradient:hover {
+    background: linear-gradient(135deg, #ffe680 0%, #ffcc33 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    color: #000;
+}
+
+/* Main text */
+.main-text {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transform: rotate(-12deg);
+    max-width: 100vw;
+}
+
+/* Skills + button layout */
+.skills-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* Ensure all badges visible */
+.skills-button .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem;
+}
+
+/* Hero full height */
+.hero {
+    min-height: 100vh;
+}
+
+/* Remove extra white gap */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ===== Footer ===== */
+.custom-footer {
+    background: var(--primary-gradient);
+    margin-top: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* ===== Remove White Gap ===== */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: calc(100vh - 160px);
 }

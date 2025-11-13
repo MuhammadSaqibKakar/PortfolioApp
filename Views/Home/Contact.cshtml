@@ -2,11 +2,68 @@
     ViewData["Title"] = "Contact";
 }
 
-<h2>Contact Me</h2>
-<p>Feel free to reach out via email or connect on LinkedIn.</p>
+<section class="py-5" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+    <div class="container">
+        <h2 class="mb-5 text-center text-white fw-bold">Contact Me</h2>
+        <div class="row g-4 justify-content-center">
 
-<ul class="list-group">
-    <li class="list-group-item">Email: saqib@example.com</li>
-    <li class="list-group-item">LinkedIn: <a href="https://linkedin.com/in/saqib" target="_blank">linkedin.com/in/saqib</a></li>
-    <li class="list-group-item">GitHub: <a href="https://github.com/saqib" target="_blank">github.com/saqib</a></li>
-</ul>
+            <!-- Email Card -->
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-4 text-center p-4">
+                    <h5 class="fw-semibold mb-3">Email Me</h5>
+                    <p class="mb-3">MuhummadSaqibKakar@gmail.com</p>
+                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Muhummadsaqibkakar@gmail.com" target="_blank" class="btn btn-custom-gradient w-100">Send Email</a>
+
+                </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-4 text-center p-4">
+                    <h5 class="fw-semibold mb-3">WhatsApp</h5>
+                    <p class="mb-3">+92-3148483925</p>
+                    <a href="https://wa.me/923148483925" target="_blank" class="btn btn-custom-gradient w-100">Message on WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .btn-custom-gradient {
+        background: linear-gradient(135deg, #4a368d 0%, #3308f4 100%);
+        border: none;
+        border-radius: 50px;
+        color: #f8f8f8;
+        font-weight: 600;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-custom-gradient:hover {
+        background: linear-gradient(135deg, #ffffff 0%, #1293ca 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 154, 158, 0.4);
+        color: #000 !important;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+</style>
