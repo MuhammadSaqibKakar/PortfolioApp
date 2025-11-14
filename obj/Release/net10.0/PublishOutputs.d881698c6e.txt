@@ -1,0 +1,7 @@
+D:\Vscode\DotNet_Projects\Portfolio\out\Portfolio.exe
+D:\Vscode\DotNet_Projects\Portfolio\out\appsettings.Development.json
+D:\Vscode\DotNet_Projects\Portfolio\out\appsettings.json
+D:\Vscode\DotNet_Projects\Portfolio\out\Portfolio.dll
+D:\Vscode\DotNet_Projects\Portfolio\out\Portfolio.deps.json
+D:\Vscode\DotNet_Projects\Portfolio\out\Portfolio.runtimeconfig.json
+D:\Vscode\DotNet_Projects\Portfolio\out\Portfolio.pdb
