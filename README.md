@@ -1,81 +1,50 @@
-# Personal Portfolio Website
+# ASP.NET Core Portfolio
 
-This project is a **personal portfolio website** designed to showcase my skills, experience, and projects as a Full-Stack Developer specializing in **.NET, C#, Cloud, and Linux**.
+A responsive personal portfolio application built with **ASP.NET Core MVC** to present developer skills, projects, certifications, and professional contact information through a structured web interface.
 
----
+## ✨ Features
 
-## 🚀 Features
-
-- Modern UI with gradient background
-- Responsive design for all devices
-- Hero section with cloud-style text container
-- Skills displayed as beautiful tags
-- Sections included:
-  - Home
-  - About
-  - Projects
-  - Certificates
-  - Contact
-
----
-
-## 🎨 Cloud Text Feature
-
-The text section (“Hi, I'm Saqib” and the subtitle line) is wrapped inside a **cloud-like container** using custom CSS:
-
-```html
-<div class="cloud">
-    <h1>Hi, I'm Saqib</h1>
-    <p>Full-Stack Developer | .NET | C# | Cloud | Linux</p>
-</div>
-```
-
-```css
-.cloud {
-    display: inline-block;
-    background: #ffffff;
-    padding: 30px 50px;
-    border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-.cloud p {
-    color: #ffcc00;
-}
-```
-
----
+- Responsive portfolio layout
+- Home, About, Projects, Certificates, and Contact sections
+- Reusable MVC structure for maintainable page development
+- Custom styling and Bootstrap-based responsive components
+- Personal branding and developer-focused project presentation
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, Bootstrap
-- **Backend:** ASP.NET Core MVC
-- **Database:** SQL / MySQL
-- **Other:** Entity Framework, Cloud, Linux
+- **ASP.NET Core MVC**
+- **C#**
+- **HTML5 / CSS3**
+- **Bootstrap**
+- **SQL / MySQL**
+- **Entity Framework**
 
----
+## 📁 Structure
 
-## 📂 Folder Structure
-
+```text
+Controllers/        # Request and page controllers
+Models/             # Application/domain models
+Views/              # Razor views
+wwwroot/            # CSS, JavaScript, images and static assets
+appsettings.json    # Application configuration
+Program.cs          # Application bootstrap
 ```
-/wwwroot
-/Controllers
-/Models
-/Views
-appsettings.json
-program.cs
+
+## ▶️ Run Locally
+
+Restore dependencies and start the application with the .NET SDK:
+
+```bash
+dotnet restore
+dotnet run
 ```
 
+Use the local URL printed by ASP.NET Core in the terminal.
+
+## 🎯 Purpose
+
+This project demonstrates a conventional ASP.NET Core MVC application structure while providing a portfolio-style interface for presenting software engineering work and technical experience.
+
 ---
 
-## 📸 Preview
-
-The hero section includes a cloud-wrapped heading for better UI aesthetics.
-
----
-
-## 📬 Contact
-
-**Saqib**  
-Full-Stack Developer | .NET | C# | Cloud | Linux
+**Developed by Muhammad Saqib Kakar.**
